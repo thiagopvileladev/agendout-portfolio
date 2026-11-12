@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendout | Demonstração do Sistema</title>
+    <meta name="description" content="Conheça o Agendout, a plataforma de gestão e agendamento para barbearias.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Devicon para logos oficiais em SVG das tecnologias -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                    <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                    <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+                </svg>
+                <span>Agendout</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#booking-page">Booking Page</a>
+                <a href="#admin-panel">Painel Admin</a>
+                <a href="https://agendout.com.br" target="_blank" class="btn btn-outline btn-sm">Site Oficial</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container relative">
+                <div class="hero-badge">Gestão inteligente para barbearias</div>
+                <h1 class="hero-title">Conheça o futuro com o <span class="highlight">Agendout</span></h1>
+                <p class="hero-subtitle">Uma plataforma completa de gestão e agendamento desenvolvida para escalar o seu negócio e simplificar sua rotina.</p>
+                <div class="hero-buttons">
+                    <a href="#booking-page" class="btn btn-primary">Explorar o Sistema</a>
+                    <a href="https://agendout.com.br" target="_blank" class="btn btn-secondary">Acessar o Agendout</a>
+                </div>
+                
+                <!-- Tecnologias em formato de Badges com SVGs -->
+                <div class="hero-techs">
+                    <span class="tech-badge"><i class="devicon-java-plain colored"></i> Java</span>
+                    <span class="tech-badge"><i class="devicon-spring-original colored"></i> Spring Boot</span>
+                    <span class="tech-badge"><i class="devicon-react-original colored"></i> React</span>
+                    <span class="tech-badge"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria: Booking Page -->
+        <section id="booking-page" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Booking Page</h2>
+                    <p>A experiência fluida e moderna do seu cliente ao realizar um agendamento.</p>
+                </div>
+                <div class="grid gallery-grid">
+                    <div class="gallery-card" data-category="booking">
+                        <div class="img-wrapper">
+                            <img src="assets/1.png" alt="Página inicial da barbearia" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>1. Página Inicial</h3>
+                            <p>Vitrine elegante da barbearia com informações, horários de funcionamento e localização.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="booking">
+                        <div class="img-wrapper">
+                            <img src="assets/2.png" alt="Seleção de serviços" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>2. Serviços</h3>
+                            <p>Lista de serviços disponíveis com descrições detalhadas, preços e duração estimada.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="booking">
+                        <div class="img-wrapper">
+                            <img src="assets/3.png" alt="Escolha de barbeiro" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>3. Profissionais</h3>
+                            <p>Seleção do barbeiro de preferência, gerando conexão e confiança para o atendimento.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="booking">
+                        <div class="img-wrapper">
+                            <img src="assets/4.png" alt="Seleção de data e horário" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>4. Data e Horário</h3>
+                            <p>Visualização de disponibilidade em tempo real e escolha de horários sem conflitos.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="booking">
+                        <div class="img-wrapper">
+                            <img src="assets/5.png" alt="Confirmação do agendamento" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>5. Confirmação</h3>
+                            <p>Resumo transparente das escolhas do cliente e finalização rápida do agendamento.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="booking">
+                        <div class="img-wrapper">
+                            <img src="assets/6.png" alt="modo claro" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>6. Modo Claro</h3>
+                            <p>Interface amigável e moderna com opção de modo claro para melhor experiência do usuário</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria: Painel Admin -->
+        <section id="admin-panel" class="gallery-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Painel Administrativo</h2>
+                    <p>Controle total da operação, finanças e equipe em um dashboard poderoso.</p>
+                </div>
+                <div class="grid gallery-grid">
+                    <div class="gallery-card" data-category="admin">
+                        <div class="img-wrapper">
+                            <img src="assets/7.png" alt="Dashboard com indicadores e métricas" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>1. Dashboard</h3>
+                            <p>Visão executiva do negócio com indicadores de desempenho, métricas e faturamento</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="admin">
+                        <div class="img-wrapper">
+                            <img src="assets/8.png" alt="Gerenciamento de agendamentos" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>2. Agendamentos</h3>
+                            <p>Agenda completa, gerenciamento de status (concluído, falta) e organização diária</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="admin">
+                        <div class="img-wrapper">
+                            <img src="assets/9.png" alt="Gestão de equipe" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>3. Equipe</h3>
+                            <p>Cadastro de barbeiros, parametrização de serviços e turnos de trabalho de cada membro</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="admin">
+                        <div class="img-wrapper">
+                            <img src="assets/10.png" alt="Controle financeiro" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>4. Financeiro</h3>
+                            <p>Controle preciso de caixa, fluxo de receitas e registro de despesas operacionais</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="admin">
+                        <div class="img-wrapper">
+                            <img src="assets/11.png" alt="servicos" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>5. Serviços</h3>
+                            <p>Gerenciamento completo dos serviços oferecidos, incluindo definição de preços, duração e profissionais responsáveis</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-category="admin">
+                        <div class="img-wrapper">
+                            <img src="assets/12.png" alt="personalizacao" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>6. Personalização</h3>
+                            <p>Configuração de aparência e personalização do ambiente de uso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Tecnologias Refatorada -->
+        <section class="tech-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Arquitetura & Tecnologias</h2>
+                    <p>Construído com uma stack robusta, segura e escalável.</p>
+                </div>
+                <div class="grid tech-grid">
+                    <div class="tech-card glass-panel">
+                        <div class="tech-icon-wrapper">
+                            <i class="devicon-java-plain"></i>
+                        </div>
+                        <h3>Backend</h3>
+                        <ul class="tech-list">
+                            <li><i class="devicon-java-plain"></i> Java 17</li>
+                            <li><i class="devicon-spring-original"></i> Spring Boot</li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Spring Security
+                            </li>
+                            <li><i class="devicon-hibernate-plain"></i> Hibernate / JPA</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card glass-panel">
+                        <div class="tech-icon-wrapper">
+                            <i class="devicon-react-original"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                        <ul class="tech-list">
+                            <li><i class="devicon-react-original"></i> React</li>
+                            <li><i class="devicon-vite-original"></i> Vite</li>
+                            <li><i class="devicon-tailwindcss-original"></i> Tailwind CSS</li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                                Recharts
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tech-card glass-panel">
+                        <div class="tech-icon-wrapper">
+                            <i class="devicon-postgresql-plain"></i>
+                        </div>
+                        <h3>Infraestrutura</h3>
+                        <ul class="tech-list">
+                            <li><i class="devicon-postgresql-plain"></i> PostgreSQL</li>
+                            <li><i class="devicon-supabase-plain"></i> Supabase</li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                                Render
+                            </li>
+                            <li><i class="devicon-cloudflare-plain"></i> Cloudflare</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé (Mantido igual) -->
+    <footer class="footer">
+        <!-- ... (código do rodapé original) ... -->
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                        <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                        <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+                    </svg>
+                    <span>Agendout</span>
+                </div>
+                <p>Desenvolvido de forma independente para revolucionar a gestão de barbearias.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://agendout.com.br" target="_blank">Site Oficial</a>
+                <a href="https://agendout.com.br/barbearia" target="_blank">Demonstração</a>
+                <a href="https://github.com/SEU-USUARIO/agendout" target="_blank" class="github-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    Repositório
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal (Mantido igual) -->
+    <div id="lightbox" class="lightbox">
+        <!-- ... (código do modal original) ... -->
+        <button class="lightbox-close" aria-label="Fechar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div class="lightbox-img-wrapper">
+                <img id="lightbox-img" src="" alt="Imagem ampliada">
+                <div class="lightbox-caption">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-desc"></p>
+                </div>
+            </div>
+            <button class="lightbox-next" aria-label="Próximo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
